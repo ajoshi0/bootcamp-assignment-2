@@ -376,7 +376,7 @@ body {
 
 .review_close {
 	text-decoration: none; display: block; width: 26px; height: 26px; background: url(../images/reviews/close-panel.png);
-	position: absolute; right: 24px; top: 32px;
+	position: absolute; right: 24px;
 }
 
 .review_close:hover {
