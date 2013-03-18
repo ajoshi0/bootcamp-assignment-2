@@ -171,7 +171,7 @@ $(function()
 
 	$.ajax ({ type: "get", async: false, url: "res/ratingsReviews.json", dataType: "json", success: function(result) { ratings = result; } });
 
-	loadItemData (17013297);
+	//loadItemData (17013297);
 
 	$(".qty .dropdown-menu a").click(function()
 	{
