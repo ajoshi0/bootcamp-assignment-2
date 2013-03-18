@@ -121,7 +121,7 @@ var listProducts = function()
         var div = $("#resultTemplate").clone().removeAttr("id");
 
 		div.children("img").attr("src", "images/blank.png").attr("data-original", k.image).attr("onclick", "showItem("+last(k.url.split("/"))+");");
-        div.children("b").text(k.name.substr(0, 1+k.name.indexOf("\""))).attr("onclick", "window.location='"+k.url+"';");
+        div.children("b").text(k.name.substr(0, 1+k.name.indexOf("\""))).attr("onclick", "showItem("+last(k.url.split("/"))+");");
 
         var j = k.name.substr(2+k.name.indexOf("\""));
         if (j.length > 28) j = j.substr(0, 28) + "...";
