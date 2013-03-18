@@ -184,13 +184,15 @@ $(function()
         var checkForNaN = isNaN(parseInt($(".qty").data("value")));
         if (checkForNaN == true)        
         {
-        alert("Please add item to cart.");
+            alert("Item added to cart.");
+            $(".cart-items:visible").text (parseInt($(".cart-items:visible").text()) + 1);
+            $(".qty .value").text("Qty");
         }
         else
         {
-		alert("Item added to cart.");
-		$(".cart-items:visible").text (parseInt($(".cart-items:visible").text()) + parseInt($(".qty").data("value")));
-		$(".qty .value").text("Qty");
+            alert("Item added to cart.");
+            $(".cart-items:visible").text (parseInt($(".cart-items:visible").text()) + parseInt($(".qty").data("value")));
+            $(".qty .value").text("Qty");
 	    }
 		return false;
 	});
