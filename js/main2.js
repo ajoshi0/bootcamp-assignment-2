@@ -155,9 +155,9 @@ function loadItemData (item_id)
 	.each(function()
 	{
 		var text = $(this).html();
-		if (text.length < 200) return;
+		if (text.length < 500) return;
 
-		$(this).html(text.substr(0, 200) + " ");
+		$(this).html(text.substr(0, 500) + " ");
 		$(this).append($("<a>").attr("href", "#").text("Read more").click(function() {
 			$(this).parent().html(text);
 		}));
