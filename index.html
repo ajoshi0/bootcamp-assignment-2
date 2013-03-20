@@ -17,7 +17,7 @@
 
 </head>
 
-<body onload="FocusOnInput()">
+<body>
 
 <div class="container-fluid" style="padding:0;">
 
@@ -35,7 +35,8 @@
                     </div>
 
                     <div class="ui-search-box">
-                        <input type="text" id="searchbox" placeholder="Search"/>
+                        <input type="text" id="searchbox" placeholder="Search"
+                               onkeyup="if(event.keyCode==13) search($(this));"/>
                     </div>
                 </div>
 

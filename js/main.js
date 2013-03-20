@@ -170,11 +170,6 @@ function signUpMail (email)
         alert("Please specify a correct email address.");
 }
 
-function FocusOnInput()
-{
-    document.getElementById("searchbox").focus();
-}
-
 function search (term)
 {
     if (/^[^&<>{}]*$/.test(term.val()))
