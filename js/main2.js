@@ -267,7 +267,7 @@ function loadItemData (item_id)
 		if (!groups[groupName])
 			groups[groupName] = { order:attr.groupDisplayOrder, items:[] };
 
-		groups[groupName].items.push({ order:attr.attributeDisplayOrder, value:attr.attributeValue, name:attr.attrDisplayName,  });
+		groups[groupName].items.push({ order:attr.attributeDisplayOrder, value:attr.attributeValue, name:attr.attrDisplayName});
 	}
 
 	groups = toArray(groups).sort(sortFunction);
