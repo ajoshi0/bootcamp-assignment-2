@@ -242,7 +242,7 @@ function loadItemData (item_id)
 	}
 
 	carousel_inner.children("div:first").addClass("active");
-	carousel.appendTo($(".review_carousel:first")).carousel();
+	carousel.appendTo($(".review_carousel:first")).carousel({interval:2000});
 
 	/* Carousel #2 */
 	cRatings = [];
