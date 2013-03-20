@@ -30,3 +30,18 @@
 	(a) Find the comment "<!-- Dummy DIV to replace header. -->" and uncomment the DIV below that.
 	(b) Find the DIV element with class "no-navbar-fixed-top" and replace with "navbar-fixed-top".
 	(c) That's all.
+
+-------------------------------------------------------
+Part #2:
+
+- The overlay was implemented as two parts, the background transparent layer which is a fixed DIV in order to wrap the whole screen (this one has scroll bar enabled), and a content DIV which is inside the first DIV.
+
+- The design of the layer was made on a separate file first and then added as a DIV to the main index.
+
+- All reviews are loaded at startup and then shown/sorted/filtered as requested by the user.
+
+- Currently a cart object is kept in memory to manage the items and their counts.
+
+- The main2.js file contains all the JS code used for the layer.
+
+- One code-related issue is the carousel. It doesn't allow dynamic changes of the contents of it, so everytime a change is made to the contents of the carousel it has to be basically re-created from scratch and converted to a carousel using bootstrap's .carousel() call.

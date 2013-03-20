@@ -447,7 +447,7 @@ body {
 }
 
 .review_carousel .carousel-indicators {
-	top: auto; right: auto; bottom: -40px; left: 50%; margin-left: -75px; width: 150px; text-align: center;
+	top: auto; right: auto; bottom: -40px; left: 50%; margin-left: -225px; width: 450px; text-align: center;
 }
 
 .review_carousel .carousel-indicators li {
@@ -577,7 +577,7 @@ h1.def span {
 
 .review_related .item > a {
 	display: block; color: #0e77bd; font-size: 1.5em; margin-top: 12px;
-	line-height: 1.4em; cursor: pointer;
+	line-height: 1.4em; cursor: pointer; font-weight: bold;
 }
 
 .review_related .item > span {

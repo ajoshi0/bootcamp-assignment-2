@@ -2,19 +2,18 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 <head>
 
-    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-    <meta http-equiv="content-language" content="en"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<meta http-equiv="content-language" content="en"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-    <title>Walmart Product List - TVs</title>
-    <meta name="description" content=""/>
+	<title>Walmart Product List - TVs</title>
+	<meta name="description" content=""/>
 
     <link rel="stylesheet" href="js/bootstrap/css/bootstrap.min.css" type="text/css"/>
     <link rel="stylesheet" href="js/bootstrap/css/bootstrap-responsive.min.css" type="text/css"/>
     <link rel="stylesheet" href="js/bootstrap/css/bootstrap-select.min.css" type="text/css"/>
     <link rel="stylesheet" href="js/jquery-ui/css/jquery-ui-1.10.1.min.css" type="text/css"/>
     <link rel="stylesheet" href="css/style.css" type="text/css"/>
-
 
 </head>
 
@@ -299,7 +298,7 @@
     <div class="score">
         <div style="width: 50%;"></div>
     </div>
-    <a href="#reviews">5 Reviews</a>
+    <a href="#reviews"><span class="num_reviews">25</span> Reviews</a>
     <a href="https://www.walmart.com/subflow/BVAppsLoginContext/215449584/sub_generic_login/start.do?bvappcode=rr&bvauthenticateuser=true&bvcontenttype=REVIEW_SUBMISSION&bvdisplaycode=1336&bvpage=http%3A%2F%2Fwalmart.ugc.bazaarvoice.com%2F1336%2F21311919%2Fsubmitreview.htm%3Fformat%3Dembedded%26campaignid%3DBV_RATING_SUMMARY%26sessionparams%3D__BVSESSIONPARAMS__%26return%3Dhttp%253A%252F%252Fwww.walmart.com%252Fip%252FVIZIO-60-Class-LED-1080p-120Hz-SMART-HDTV-1.94-ultra-slim-E601i-A3%252F21311919%26innerreturn%3Dhttp%253A%252F%252Fwalmart.ugc.bazaarvoice.com%252F1336%252F21311919%252Fratings.djs%253Fformat%253Dembeddedhtml%26user%3D__USERID__%26authsourcetype%3D__AUTHTYPE__&bvproductid=21311919">Write
         a Review</a>
     <a href="http://www.walmart.com/ip/VIZIO-60-Class-LED-1080p-120Hz-SMART-HDTV-1.94-ultra-slim-E601i-A3/21311919#Q%26A+Exchange"
@@ -375,7 +374,7 @@
 <div class="review_related">
     <div class="row-fluid">
         <div class="span9"><h1 class="def">Please Who Viewed This Item Also Viewed</h1></div>
-        <div class="span3"><a href="#" class="btn def pull-right">See More<span class="right-arrow"></span></a></div>
+        <div class="span3"><a href="#" class="review_close2 btn def pull-right">See More<span class="right-arrow"></span></a></div>
     </div>
 
     <br/><br/>
@@ -464,8 +463,17 @@
                 t2
             </div>
 
-            <div class="tab-pane review_warranty" id="t3">
-                t3
+            <div class="tab-pane" id="t3">
+               <img class="pull-left" src="http://i.walmartimages.com/i/p/00/02/95/15/40/0002951540080_100X100.jpg"/>
+
+				<b>Walmart Product Care Plans</b>
+
+				<p>A limited product warranty is included free for most items. With an optional Walmart Care Plan you can extend coverage up to 3 additional years. Walmart Care Plan Extended Warranties cover 100% of the cost for repair or replacement, including shipping charges for the exchange. <a href="">See Details</a></p>
+				<p>We'll show you extended warranty options and pricing at checkout if applicable.</p>
+
+				<p>If you made your purchase in a Walmart store and would like to purchase a warranty <a href="http://see.walmart.com/walmart/protection-plans/">Click Here</a></p>
+
+				<p class="review_warranty"></p>
             </div>
 
             <div class="tab-pane review_financing" id="t4">
@@ -526,7 +534,7 @@
 <div class="review_comments">
 
     <div class="row-fluid">
-        <div class="span8"><h1 class="def">Reviews &amp; Ratings <span>(5 Total)</span></h1></div>
+        <div class="span8"><h1 class="def">Reviews &amp; Ratings <span>(25 Total)</span></h1></div>
         <div class="span4"><a
                 href="https://www.walmart.com/subflow/BVAppsLoginContext/215449584/sub_generic_login/start.do?bvappcode=rr&bvauthenticateuser=true&bvcontenttype=REVIEW_SUBMISSION&bvdisplaycode=1336&bvpage=http%3A%2F%2Fwalmart.ugc.bazaarvoice.com%2F1336%2F21311919%2Fsubmitreview.htm%3Fformat%3Dembedded%26campaignid%3DBV_RATING_SUMMARY%26sessionparams%3D__BVSESSIONPARAMS__%26return%3Dhttp%253A%252F%252Fwww.walmart.com%252Fip%252FVIZIO-60-Class-LED-1080p-120Hz-SMART-HDTV-1.94-ultra-slim-E601i-A3%252F21311919%26innerreturn%3Dhttp%253A%252F%252Fwalmart.ugc.bazaarvoice.com%252F1336%252F21311919%252Fratings.djs%253Fformat%253Dembeddedhtml%26user%3D__USERID__%26authsourcetype%3D__AUTHTYPE__&bvproductid=21311919"
                 class="btn def pull-right">Write a Review?<span class="right-arrow"></span></a></div>
@@ -538,35 +546,54 @@
 
         <div class="span8">
             <div class="btn-group dd">
-                <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">Men &amp; Women <span
+                <a class="btn dropdown-toggle" data-toggle="dropdown" href="#"><span class="value filter1" data-value="3">Men &amp; Women</span> <span
                         class="caret"></span></a>
-                <ul class="dropdown-menu">
-                    <li><a href="#">5</a></li>
+                <ul class="dropdown-menu filter filter1">
+                    <li><a href="#" data-value="3">Male &amp; Female</a></li>
+					<li><a href="#" data-value="2">Male</a></li>
+					<li><a href="#" data-value="1">Female</a></li>
                 </ul>
             </div>
 
             <div class="btn-group dd">
-                <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">All Ages <span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                    <li><a href="#">5</a></li>
+                <a class="btn dropdown-toggle" data-toggle="dropdown" href="#"><span class="value filter2" data-value="0,100">All Ages</span> <span class="caret"></span></a>
+                <ul class="dropdown-menu filter filter2">
+					<li><a href="#" data-value="0,100">All Ages</a></li>
+					<li><a href="#" data-value="21,25">21-25</a></li>
+					<li><a href="#" data-value="26,30">26-30</a></li>
+					<li><a href="#" data-value="31,35">31-35</a></li>
+					<li><a href="#" data-value="36,40">36-40</a></li>
+					<li><a href="#" data-value="41,45">41-45</a></li>
+					<li><a href="#" data-value="46,50">46-50</a></li>
+					<li><a href="#" data-value="51,55">51-55</a></li>
+					<li><a href="#" data-value="56,60">56-60</a></li>
+					<li><a href="#" data-value="61,65">61-65</a></li>
+					<li><a href="#" data-value="66,100">66 and Older</a></li>
                 </ul>
             </div>
 
             <div class="btn-group dd">
-                <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">All Ratings <span
+                <a class="btn dropdown-toggle" data-toggle="dropdown" href="#"><span class="value filter3" data-value="0,5">All Ratings</span> <span
                         class="caret"></span></a>
-                <ul class="dropdown-menu">
-                    <li><a href="#">5</a></li>
+                <ul class="dropdown-menu filter filter3">
+					<li><a href="#" data-value="0,5">All Ratings</a></li>
+                    <li><a href="#" data-value="5,5">5</a></li>
+					<li><a href="#" data-value="4,4">4</a></li>
+					<li><a href="#" data-value="3,3">3</a></li>
+					<li><a href="#" data-value="2,2">2</a></li>
+					<li><a href="#" data-value="1,1">1</a></li>
+					<li><a href="#" data-value="0,0">0</a></li>
                 </ul>
             </div>
         </div>
 
         <div class="span4 left-separator">
             <div class="btn-group dd pull-right">
-                <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">By Most Helpful <span
+                <a class="btn dropdown-toggle" data-toggle="dropdown" href="#"><span class="value filter4" data-value="helpful">By Most Helpful</span> <span
                         class="caret"></span></a>
-                <ul class="dropdown-menu">
-                    <li><a href="#">5</a></li>
+                <ul class="dropdown-menu filter filter4">
+                    <li><a href="#" data-value="helpful">By Most Helpful</a></li>
+					<li><a href="#" data-value="rating">By Rating</a></li>
                 </ul>
             </div>
         </div>
